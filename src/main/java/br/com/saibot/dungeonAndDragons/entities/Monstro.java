@@ -12,12 +12,26 @@ public class Monstro {
     private Long id;
     private String name;
 
+    private String monsterType;
+
+    private String monsterSubType;
+
+    private String book;
+    private Integer numberPage;
+
+    private Double challengeLevel;
+
     public Monstro() {
     }
 
-    public Monstro(Long id, String name) {
+    public Monstro(Long id, String name, String monsterType, String monsterSubType, String book, Integer numberPage, Double challengeLevel) {
         this.id = id;
         this.name = name;
+        this.monsterType = monsterType;
+        this.monsterSubType = monsterSubType;
+        this.book = book;
+        this.numberPage = numberPage;
+        this.challengeLevel = challengeLevel;
     }
 
     public Long getId() {
@@ -34,6 +48,46 @@ public class Monstro {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getMonsterType() {
+        return monsterType;
+    }
+
+    public void setMonsterType(String monsterType) {
+        this.monsterType = monsterType;
+    }
+
+    public String getMonsterSubType() {
+        return monsterSubType;
+    }
+
+    public void setMonsterSubType(String monsterSubType) {
+        this.monsterSubType = monsterSubType;
+    }
+
+    public String getBook() {
+        return book;
+    }
+
+    public void setBook(String book) {
+        this.book = book;
+    }
+
+    public Integer getNumberPage() {
+        return numberPage;
+    }
+
+    public void setNumberPage(Integer numberPage) {
+        this.numberPage = numberPage;
+    }
+
+    public Double getChallengeLevel() {
+        return challengeLevel;
+    }
+
+    public void setChallengeLevel(Double challengeLevel) {
+        this.challengeLevel = challengeLevel;
     }
 
     @Override
